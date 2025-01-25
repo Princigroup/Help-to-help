@@ -1,0 +1,276 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help New World International</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #555;
+            color: #DAA520;
+            padding: 0;
+            text-align: center;
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        header .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/Home3.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-height: 90px;
+        }
+
+        header h1 {
+            color: #ebc51b; /* Color más oscuro */
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px #000; /* Sombra negra con un ligero desenfoque */
+        }
+
+        header p {
+            color: #ebc51b; /* Color más oscuro */
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px #000; /* Sombra negra con un ligero desenfoque */
+        }
+
+        .language-switch {
+            position: relative;
+            z-index: 2;
+            text-align: right;
+            padding: 10px;
+        }
+
+        .language-switch a {
+            margin: 0 10px;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .language-switch a:hover {
+            background-color: #DAA520;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #DAA520;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .goal-section, .mission-section {
+            background-color: #fff;
+            padding: 30px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .goal-section img, .mission-section img {
+            max-width: 30%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .join-us, .contact {
+            background-color: #DAA520;
+            padding: 30px;
+            color: #000;
+        }
+    </style>
+    <script>
+        function switchLanguage(language) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === language ? 'block' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="background-image"></div>
+        <img src="img/Progetto senza titolo.png" alt="Help New World International Logo">
+        <div class="language-switch">
+            <a href="#" onclick="switchLanguage('en')">English</a>
+            <a href="#" onclick="switchLanguage('es')">Español</a>
+        </div>
+        <h1>Help New World International</h1>
+        <p data-lang="en">Helping others to help, without borders, without limits.</p>
+        <p data-lang="es" style="display: none;">Ayudando a otros a ayudar, sin fronteras, sin límites.</p>
+    </header>
+
+    <nav>
+        <a href="index.html" data-lang="en">Home</a>
+        <a href="index.html" data-lang="es" style="display: none;">Home</a>
+        <a href="#Team" data-lang="en">Our Team</a>
+        <a href="#Team" data-lang="es" style="display: none;">Nuestro Equipo</a>
+        <a href="about" data-lang="en">About us</a>
+        <a href="about" data-lang="es" style="display: none;">Sobre Nosotros</a>
+        <a href="#join" data-lang="en">Join Us</a>
+        <a href="#join" data-lang="es" style="display: none;">Únete a Nosotros</a>
+        <a href="#contact" data-lang="en">Contact</a>
+        <a href="#contact" data-lang="es" style="display: none;">Contacto</a>
+    </nav>
+
+       <section id="about-us" class="mission-section">
+        <h2 data-lang="en">About Us</h2>
+        <h2 data-lang="es" style="display: none;">Sobre Nosotros</h2>
+            <img src="img/edu.pobreza.webp" alt="Our Goals">
+        <div>
+            <p data-lang="en">
+                Help New World International was founded in 2018 with the vision of supporting missions focused on alleviating poverty worldwide. In 2022, we were officially constituted, and in 2023, we successfully registered as an official organization. Our mission is to help others help, providing support to those who are dedicated to serving the most vulnerable, empowering them with the necessary resources and tools to make a lasting impact. Through love, justice, and compassion, we are committed to making a difference in the lives of those in need.
+            </p>
+            <p data-lang="es" style="display: none;">
+                Help New World International nació en 2018 con la visión de apoyar misiones enfocadas en aliviar la pobreza en todo el mundo. En 2022, nos constituimos oficialmente y, en 2023, logramos registrarnos como organización oficial. Nuestra misión es ayudar a otros a ayudar, proporcionando soporte a aquellos que se dedican a servir a los más vulnerables, capacitándolos con los recursos y herramientas necesarias para tener un impacto duradero. A través del amor, la justicia y la compasión, estamos comprometidos en hacer la diferencia en las vidas de los necesitados.
+            </p>
+        </div>
+    
+        <div>
+            <section id="Vision" class="vision-section">
+            <h3 data-lang="en">Our Vision</h3>
+            <h3 data-lang="es" style="display: none;">Nuestra Visión</h3>
+            <img src="img/pexels-asumaani-14055249.jpg" alt="Our Vision">
+            <p data-lang="en">
+                Our vision is to help others to help, empowering missions that focus on alleviating poverty through the application of God's word. We support projects that aim to bring radical change to communities, restoring dignity and creating opportunities for growth and development. We envision a world where every person, regardless of their background, has the opportunity to thrive and live a life filled with hope.
+            </p>
+            <p data-lang="es" style="display: none;">
+                Nuestra visión es ayudar a otros a ayudar, empoderando misiones que se enfoquen en aliviar la pobreza mediante la aplicación de la palabra de Dios. Apoyamos proyectos que buscan generar un cambio radical en las comunidades, restaurando la dignidad y creando oportunidades para el crecimiento y desarrollo. Imaginamos un mundo en el que cada persona, independientemente de su origen, tenga la oportunidad de prosperar y vivir una vida llena de esperanza.
+            </p>
+        </div>
+    
+        <div>
+            <section id="mission" class="mission-section">
+                <h2 data-lang="en">Our Mission</h2>
+                <h2 data-lang="es" style="display: none;">Nuestra Misión</h2>
+                <img src="img/mission.webp" alt="Our Mission">
+                <div>
+                    <p data-lang="en">Guided by the Holy Spirit and rooted in the truth of God's Word, our mission is to equip, empower, and accompany missionaries, volunteers, and leaders worldwide to fulfill God's purpose in their lives with excellence and faithfulness. We proclaim the gospel without borders, extend the message of salvation and hope to the most challenging places, and strengthen God's servants by providing spiritual, practical, and emotional tools to fulfill their calling effectively. Through love, justice, and resources, we combat poverty, restore dignity, and foster a global community of discipleship, inspiring others to obey God's perfect plans.</p>
+                    <p data-lang="es" style="display: none;">Guiados por el Espíritu Santo y arraigados en la verdad de la Palabra de Dios, nuestra misión es equipar, empoderar y acompañar a misioneros, voluntarios y líderes en todo el mundo para que cumplan con excelencia y fidelidad el propósito de Dios en sus vidas. Proclamamos el evangelio sin fronteras, extendiendo el mensaje de salvación y esperanza a los lugares más desafiantes, y fortalecemos a los siervos de Dios al proporcionar herramientas espirituales, prácticas y emocionales para cumplir su llamado de manera efectiva. A través del amor, la justicia y los recursos, combatimos la pobreza, restauramos la dignidad y fomentamos una comunidad global de discipulado, inspirando a otros a obedecer los planes perfectos de Dios.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <section id="team" class="goal-section">
+        <h2 data-lang="en">Our Team</h2>
+        <h2 data-lang="es" style="display: none;">Nuestro Equipo</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="img/IMG_6365.jpg" alt="President - Tamara Pinillos Blanco">
+                <h3 data-lang="en">President</h3>
+                <h3 data-lang="es" style="display: none;">Presidenta</h3>
+                <p data-lang="en">Tamara Pinillos Blanco</p>
+                <p data-lang="es" style="display: none;">Tamara Pinillos Blanco</p>
+            </div>
+            <div class="team-member">
+                <img src="img/member2.jpg" alt="Vice President - Natalia">
+                <h3 data-lang="en">Vice President</h3>
+                <h3 data-lang="es" style="display: none;">Vicepresidenta</h3>
+                <p data-lang="en">Natalia</p>
+                <p data-lang="es" style="display: none;">Natalia</p>
+            </div>
+            <div class="team-member">
+                <img src="img/member3.jpg" alt="Secretary - Laura Jova Aldana Camisay">
+                <h3 data-lang="en">Secretary</h3>
+                <h3 data-lang="es" style="display: none;">Secretaria</h3>
+                <p data-lang="en">Laura Jova Aldana Camisay</p>
+                <p data-lang="es" style="display: none;">Laura Jova Aldana Camisay</p>
+            </div>
+            <div class="team-member">
+                <img src="img/member4.jpg" alt="Treasurer - Montserrat Blanco Chorro">
+                <h3 data-lang="en">Treasurer</h3>
+                <h3 data-lang="es" style="display: none;">Tesorera</h3>
+                <p data-lang="en">Montserrat Blanco Chorro</p>
+                <p data-lang="es" style="display: none;">Montserrat Blanco Chorro</p>
+            </div>
+            <div class="team-member">
+                <img src="img/member5.jpg" alt="Counselor - Eunim Jenks">
+                <h3 data-lang="en">Counselor</h3>
+                <h3 data-lang="es" style="display: none;">Consejera</h3>
+                <p data-lang="en">Eunim Jenks</p>
+                <p data-lang="es" style="display: none;">Eunim Jenks</p>
+            </div>
+        </div>
+    </section>
+    <section class="banner-section">
+        <img src="img/logo jesus.png" alt="Banner Image" style="width: 100%; height: auto;">
+    </section>
+    <section id="join" class="join-us">
+        <h2 data-lang="en">Join Us</h2>
+        <h2 data-lang="es" style="display: none;">Únete a Nosotros</h2>
+        <img src="img/voluntariado.jpg" alt="join us" style="max-width: 25%; height: auto;">
+        <p data-lang="en">Become part of our mission to help others. Whether through volunteering or donations, your support makes a difference.</p>
+        <p data-lang="es" style="display: none;">Forma parte de nuestra misión para ayudar a otros. Ya sea a través del voluntariado o donaciones, tu apoyo marca la diferencia.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 data-lang="en">Contact Us</h2>
+        <h2 data-lang="es" style="display: none;">Contáctanos</h2>
+        <p data-lang="en">Email: help.new.world.international@gmail.com</p>
+        <p data-lang="es" style="display: none;">Correo Electrónico: info@helpnewworld.org</p>
+        <p data-lang="en">Phone: +34 631 60 74 90
+        <p data-lang="en">Phone: +34 624 49 75 96
+        </p>
+        <p data-lang="es" style="display: none;">Teléfono: +123 456 789</p>
+        <p data-lang="en">Follow us on social media for updates and news.</p>
+        <p data-lang="es" style="display: none;">Síguenos en las redes sociales para actualizaciones y noticias.</p>
+    </section>
+
+    <footer>
+        <p data-lang="en">&copy; 2025 Help New World International. All rights reserved.</p>
+        <p data-lang="es" style="display: none;">&copy; 2025 Help New World International. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
