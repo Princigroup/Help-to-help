@@ -22,8 +22,13 @@
             color: #DAA520;
             text-align: center;
             position: relative;
-            height: 250px;
+            height: 270px;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
 
         header .background-image {
@@ -45,20 +50,16 @@
             max-height: 90px;
         }
 
-        header h1 {
-            color: #ebc51b;
+        header h1, header p {
             position: relative;
             z-index: 2;
             text-shadow: 2px 2px 4px #000;
-            font-size: 2.5rem;
         }
 
-        header p {
-            color: #ebc51b;
-            position: relative;
-            z-index: 2;
-            text-shadow: 2px 2px 4px #000;
-            margin-top: 10px;
+        header h1 {
+            font-size: 5vw;
+            max-width: 90%;
+            text-align: center;
         }
 
         .language-switch {
@@ -70,22 +71,20 @@
 
         .language-switch a {
             margin: 0 10px;
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-weight: bold;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
         }
 
         .language-switch a:hover {
             background-color: #DAA520;
-            color: #fff;
         }
 
         nav {
             background-color: #333;
-            overflow: hidden;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -116,11 +115,6 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .goal-section img, .mission-section img {
-            max-width: 100%;
-            height: auto;
-        }
-
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -142,20 +136,10 @@
             padding: 10px 0;
             margin-top: 20px;
         }
-
-        .join-us, .contact {
-            background-color: #DAA520;
-            padding: 30px;
-            color: #000;
-        }
-
-        .contact img {
-            max-width: 100%;
-            height: auto;
-        }
     </style>
     <script>
         function switchLanguage(language) {
+            document.documentElement.lang = language;
             document.querySelectorAll('[data-lang]').forEach(el => {
                 el.style.display = el.getAttribute('data-lang') === language ? 'block' : 'none';
             });
@@ -176,8 +160,8 @@
     </header>
 
     <nav>
-        <a href="index.html" data-lang="en">Home</a>
-        <a href="index.html" data-lang="es" style="display: none;">Home</a>
+        <a href="#" data-lang="en">Home</a>
+        <a href="#" data-lang="es" style="display: none;">Inicio</a>
         <a href="#Team" data-lang="en">Our Team</a>
         <a href="#Team" data-lang="es" style="display: none;">Nuestro Equipo</a>
         <a href="#join" data-lang="en">Join Us</a>
@@ -189,16 +173,9 @@
     <section id="about-us" class="mission-section">
         <h2 data-lang="en">About Us</h2>
         <h2 data-lang="es" style="display: none;">Sobre Nosotros</h2>
-            <img src="edu.pobreza.webp" alt="Our Goals">
-        <div>
-            <p data-lang="en">
-                Help New World International was founded in 2018 with the vision of supporting missions focused on alleviating poverty worldwide. In 2022, we were officially constituted, and in 2023, we successfully registered as an official organization. Our mission is to help others help, providing support to those who are dedicated to serving the most vulnerable, empowering them with the necessary resources and tools to make a lasting impact. Through love, justice, and compassion, we are committed to making a difference in the lives of those in need.
-            </p>
-            <p data-lang="es" style="display: none;">
-                Help New World International nació en 2018 con la visión de apoyar misiones enfocadas en aliviar la pobreza en todo el mundo. En 2022, nos constituimos oficialmente y, en 2023, logramos registrarnos como organización oficial. Nuestra misión es ayudar a otros a ayudar, proporcionando soporte a aquellos que se dedican a servir a los más vulnerables, capacitándolos con los recursos y herramientas necesarias para tener un impacto duradero. A través del amor, la justicia y la compasión, estamos comprometidos en hacer la diferencia en las vidas de los necesitados.
-            </p>
-        </div>
-    
+        <img src="edu.pobreza.webp" alt="Our Goals">
+        <p data-lang="en">Help New World International was founded in 2018 with the vision of supporting missions focused on alleviating poverty worldwide.</p>
+        <p data-lang="es" style="display: none;">Help New World International nació en 2018 con la visión de apoyar misiones enfocadas en aliviar la pobreza en todo el mundo.</p>
         <div>
             <section id="Vision" class="vision-section">
             <h3 data-lang="en">Our Vision</h3>
@@ -290,10 +267,11 @@
         <p data-lang="es" style="display: none;">Síguenos en las redes sociales para actualizaciones y noticias.</p>
     </section>
 
+    </section>
+
     <footer>
         <p data-lang="en">&copy; 2025 Help New World International. All rights reserved.</p>
         <p data-lang="es" style="display: none;">&copy; 2025 Help New World International. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
