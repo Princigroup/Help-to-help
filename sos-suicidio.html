@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOS Suicidio 2026</title>
-
 <style>
+/* --- General --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f2f2f2;
+    line-height: 1.5;
 }
 
 /* HEADER */
@@ -16,72 +18,92 @@ header {
     background: linear-gradient(135deg, #1d3557, #2c7da0);
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 15px;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
 }
 
-/* 🔴 NAV */
+header p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* ALERTA CRISIS */
+.alerta {
+    background: #ff4d4d;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.alerta a {
+    background: white;
+    color: red;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.alerta a:hover {
+    background: #ffd6d6;
+}
+
+/* NAV */
 nav {
     background: #333;
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
-    text-decoration: none;
+    margin: 5px 8px;
+    display: inline-block;
+    font-size: 0.9rem;
 }
 
 nav a:hover {
     color: #DAA520;
 }
 
-/* 🔴 SECCIONES */
+/* SECCIONES */
 section {
     background: white;
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-/* 🔴 BOTONES */
-.btn {
-    background: #DAA520;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px;
+    margin: 15px auto;
+    padding: 25px 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 
-/* 🔴 ALERTA CRISIS */
-.alerta {
-    background: #ff4d4d;
+/* BOTONES */
+.btn {
+    background: #DAA520;
     color: white;
-    padding: 25px;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.alerta a {
-    background: white;
-    color: red;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
-    margin: 10px;
     display: inline-block;
+    margin: 8px 5px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    text-align: center;
 }
 
-/* 🔴 FORMULARIO */
+.btn:hover {
+    background: #c49b17;
+}
+
+/* FORMULARIO */
 .form-box {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
     text-align: left;
 }
@@ -89,19 +111,48 @@ section {
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-/* 🔴 FOOTER */
+button.btn {
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* FOOTER */
 footer {
     background: black;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    header p { font-size: 0.9rem; }
+    .alerta { font-size: 0.95rem; padding: 15px 10px; }
+    .alerta a { padding: 8px 12px; font-size: 0.85rem; }
+    nav a { font-size: 0.85rem; margin: 4px 5px; }
+    section { padding: 20px 10px; }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 1.6rem; }
+    header p { font-size: 0.85rem; }
+    .alerta { font-size: 0.9rem; padding: 12px 8px; }
+    .alerta a { padding: 6px 10px; font-size: 0.8rem; }
+    nav a { font-size: 0.8rem; margin: 3px 4px; }
+    section { padding: 15px 10px; }
+    .btn { padding: 10px 15px; font-size: 0.85rem; }
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -109,7 +160,7 @@ footer {
     <p>Prevención | Intervención | Derivación responsable</p>
 </header>
 
-<!-- 🚨 ALERTA REAL -->
+<!-- ALERTA REAL -->
 <div class="alerta">
     ⚠️ ¿Estás en una situación de emergencia?
     <br>
@@ -119,7 +170,7 @@ footer {
 
 <nav>
     <a href="#que-es">Qué es</a>
-    <a href="#modelo">Modelo de intervención</a>
+    <a href="#modelo">Modelo</a>
     <a href="#protocolos">Protocolos</a>
     <a href="#formacion">Formación</a>
     <a href="#transparencia">Transparencia</a>
@@ -136,14 +187,12 @@ footer {
 
 <section id="modelo">
     <h2>Modelo de intervención</h2>
-
     <ul>
         <li>Escucha activa sin juicio</li>
         <li>Contención emocional</li>
         <li>Evaluación de riesgo</li>
         <li>Derivación a recursos oficiales</li>
     </ul>
-
     <p>
         El proyecto NO sustituye servicios médicos o psicológicos, sino que actúa como
         puente de acompañamiento hacia ellos.
@@ -152,7 +201,6 @@ footer {
 
 <section id="protocolos">
     <h2>Protocolos de actuación</h2>
-
     <a href="protocolo-intervencion.pdf" class="btn">Protocolo intervención</a>
     <a href="rgpd.pdf" class="btn">Protección de datos</a>
     <a href="manual.pdf" class="btn">Manual voluntarios</a>
@@ -160,11 +208,7 @@ footer {
 
 <section id="formacion">
     <h2>Formación de voluntarios</h2>
-
-    <p>
-        Los voluntarios reciben formación específica en:
-    </p>
-
+    <p>Los voluntarios reciben formación específica en:</p>
     <ul>
         <li>Escucha activa</li>
         <li>Detección de riesgo</li>
@@ -175,7 +219,6 @@ footer {
 
 <section id="transparencia">
     <h2>Transparencia</h2>
-
     <p>
         El proyecto se desarrolla en colaboración con centros de salud y servicios sociales,
         siguiendo criterios de responsabilidad y protección de datos.
@@ -184,11 +227,9 @@ footer {
 
 <section id="contacto">
     <h2>Contacto</h2>
-
     <p>📞 631 607 490</p>
     <p>✉️ info@helpnewworld.org</p>
 
-    <!-- 🔴 FORMULARIO -->
     <div class="form-box">
         <form action="https://formspree.io/f/xzzdgpbv" method="POST">
             <input type="text" name="name" placeholder="Nombre" required>
@@ -197,7 +238,6 @@ footer {
             <button class="btn" type="submit">Enviar</button>
         </form>
     </div>
-
 </section>
 
 <footer>
