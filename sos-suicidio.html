@@ -1,74 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>SOS Suicidio 2026</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f9f9f9;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<title>SOS Suicidio 2026</title>
 
-        header {
-            background: #333;
-            color: white;
-            padding: 40px 20px;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+}
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            background: white;
-            margin-top: 20px;
-        }
+/* 🔴 HEADER */
+header {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        h1 {
-            color: #DAA520;
-        }
+header h1 {
+    font-size: 3rem;
+}
 
-        .btn {
-            background: #DAA520;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-    </style>
+/* 🔴 NAV */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #DAA520;
+}
+
+/* 🔴 SECCIONES */
+section {
+    background: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 🔴 BOTONES */
+.btn {
+    background: #DAA520;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* 🔴 ALERTA CRISIS */
+.alerta {
+    background: #ff4d4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.alerta a {
+    background: white;
+    color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* 🔴 FORMULARIO */
+.form-box {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* 🔴 FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>SOS SUICIDIO</h1>
-    <p>Proyecto 2026 – Help New World International</p>
+    <h1>SOS SUICIDIO 2026</h1>
+    <p>Prevención | Intervención | Derivación responsable</p>
 </header>
 
-<section>
+<!-- 🚨 ALERTA REAL -->
+<div class="alerta">
+    ⚠️ ¿Estás en una situación de emergencia?
+    <br>
+    <a href="tel:112">📞 Llamar al 112</a>
+    <a href="tel:024">📞 Línea 024 (España)</a>
+</div>
+
+<nav>
+    <a href="#que-es">Qué es</a>
+    <a href="#modelo">Modelo de intervención</a>
+    <a href="#protocolos">Protocolos</a>
+    <a href="#formacion">Formación</a>
+    <a href="#transparencia">Transparencia</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="que-es">
     <h2>¿Qué es SOS Suicidio?</h2>
     <p>
-        SOS Suicidio es un programa de prevención, escucha activa y acompañamiento emocional
-        dirigido a personas que atraviesan momentos de crisis, desesperanza o sufrimiento.
+        Programa comunitario de prevención del suicidio basado en escucha activa,
+        acompañamiento emocional y derivación responsable hacia servicios sanitarios.
     </p>
-
-    <h2>Nuestro objetivo</h2>
-    <p>
-        Crear una red de apoyo humano que actúe de forma responsable, con formación y protocolos,
-        conectando a las personas con los recursos adecuados.
-    </p>
-
-    <h2>¿Buscamos voluntarios?</h2>
-    <p>
-        Sí. Estamos formando un equipo comprometido con ayudar desde el respeto y la responsabilidad.
-    </p>
-
-    <p><strong>📞 631 607 490</strong></p>
-    <p><strong>✉️ info@helpnewworld.org</strong></p>
-
-    <a href="index.html" class="btn">Volver</a>
 </section>
+
+<section id="modelo">
+    <h2>Modelo de intervención</h2>
+
+    <ul>
+        <li>Escucha activa sin juicio</li>
+        <li>Contención emocional</li>
+        <li>Evaluación de riesgo</li>
+        <li>Derivación a recursos oficiales</li>
+    </ul>
+
+    <p>
+        El proyecto NO sustituye servicios médicos o psicológicos, sino que actúa como
+        puente de acompañamiento hacia ellos.
+    </p>
+</section>
+
+<section id="protocolos">
+    <h2>Protocolos de actuación</h2>
+
+    <a href="protocolo-intervencion.pdf" class="btn">Protocolo intervención</a>
+    <a href="rgpd.pdf" class="btn">Protección de datos</a>
+    <a href="manual.pdf" class="btn">Manual voluntarios</a>
+</section>
+
+<section id="formacion">
+    <h2>Formación de voluntarios</h2>
+
+    <p>
+        Los voluntarios reciben formación específica en:
+    </p>
+
+    <ul>
+        <li>Escucha activa</li>
+        <li>Detección de riesgo</li>
+        <li>Gestión emocional</li>
+        <li>Protocolos de derivación</li>
+    </ul>
+</section>
+
+<section id="transparencia">
+    <h2>Transparencia</h2>
+
+    <p>
+        El proyecto se desarrolla en colaboración con centros de salud y servicios sociales,
+        siguiendo criterios de responsabilidad y protección de datos.
+    </p>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <p>📞 631 607 490</p>
+    <p>✉️ info@helpnewworld.org</p>
+
+    <!-- 🔴 FORMULARIO -->
+    <div class="form-box">
+        <form action="https://formspree.io/f/xzzdgpbv" method="POST">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button class="btn" type="submit">Enviar</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Help New World International</p>
+</footer>
 
 </body>
 </html>
